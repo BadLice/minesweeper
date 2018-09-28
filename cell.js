@@ -52,7 +52,7 @@ class Cell
 
   onClick()
   {
-    if (!this.active && mouseX > this.x * SIZE && mouseX < this.x * SIZE + SIZE && mouseY > this.y * SIZE && mouseY < this.y * SIZE + SIZE)
+    if (!this.active && !gameOver && mouseX > this.x * SIZE && mouseX < this.x * SIZE + SIZE && mouseY > this.y * SIZE && mouseY < this.y * SIZE + SIZE)
     {
       if (mouseIsPressed)
       {
